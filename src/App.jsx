@@ -10,7 +10,6 @@ function App() {
   const [quizTime, setQuizTime] = useState(false);
 
   const getQuizTime = (flag) => {
-    console.log(flag, "quiz time");
     setQuizTime(flag);
   };
 

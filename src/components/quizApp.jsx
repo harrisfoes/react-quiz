@@ -125,10 +125,8 @@ export default function QuizzApp({ category, difficulty, setQuizTime }) {
           {currentQuestion < questions.length ? (
             <>
               <div className="flex justify-between text-sm">
-                <span> Q: {currentQuestion} / 10</span>
-                <span>
-                  Score: {score} / {questions.length}
-                </span>
+                <span> Q: {currentQuestion + 1} / 10</span>
+                <span>Score: {score}</span>
               </div>
               <Quiz
                 questions={questions[currentQuestion]}
